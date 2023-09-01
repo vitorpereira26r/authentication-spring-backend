@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class AuthController {
 
-    private final UserService userService;
+    private UserService userService;
 
     @PostMapping("/login")
     public ResponseEntity<UserDto> login(@RequestBody CredencialsDto credencialsDto){

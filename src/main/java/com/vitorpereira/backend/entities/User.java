@@ -1,10 +1,7 @@
 package com.vitorpereira.backend.entities;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -29,4 +26,8 @@ public class User {
 
     @Column(nullable = false)
     private String password;
+
+    public String getPassword (){
+        return password;
+    }
 }
